@@ -1,3 +1,4 @@
+<script src="js/contact.js"></script>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,8 +19,8 @@
     <header class="navbar">
 
         <div class="brand">
-            <img src="assets/images/logo.jpg" class="logo-img">
-            <span class="logo-text">VisaConnect</span>
+            <img src="assets/images/logo.jpeg" class="logo-img">
+            <span class="logo-text">Visa Connect Assis</span>
         </div>
 
         <nav class="nav-pill">
@@ -82,7 +83,7 @@
 
                 <h3>💬 WhatsApp</h3>
                 <a href="https://wa.me/918722169966" target="_blank">
-                    💬 Start WhatsApp Chat
+                    💬 918722169966
                 </a>
                 <p>Chat with our consultants instantly</p>
 
@@ -100,31 +101,35 @@
 
         <h2>Send Us a Message</h2>
 
-        <form class="contact-form">
+        <form class="contact-form" id="contactForm">
 
             <div class="input-group">
-                <input type="text" required>
+                <input type="text" id="fullname" required>
                 <label>Full Name</label>
             </div>
 
             <div class="input-group">
-                <input type="email" required>
+                <input type="email" id="email" required>
                 <label>Email Address</label>
             </div>
 
             <div class="input-group">
-                <input type="text" required>
+                <input type="text" id="phone" required>
                 <label>Phone Number</label>
             </div>
 
             <div class="input-group">
-                <textarea required></textarea>
+                <textarea id="message" required></textarea>
                 <label>Your Message</label>
             </div>
 
-            <button type="submit">Submit Inquiry</button>
+            <button type="submit">
+                Submit Inquiry
+            </button>
 
         </form>
+
+        <div id="responseMessage"></div>
 
     </section>
 
