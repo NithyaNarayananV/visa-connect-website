@@ -271,6 +271,8 @@ body {
 
 }
 
+.why-card {
+    background: #f8fafc;
 
 /* ============================= */
 /* NOTE SECTION */
@@ -290,6 +292,42 @@ body {
 
 }
 
+.why-card h3 {
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #374151;
+}
+
+/* TRUST */
+
+.trust-section {
+    padding: 80px 15%;
+    text-align: center;
+    background: #111132;
+}
+
+.trust-section p {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 15px;
+    opacity: 0.85;
+}
+
+/* ============================= 
+    NOTE SECTION 
+ ============================= */
+
+.note-section {
+    background: #fff3cd;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #92400e;
+}
 
 /* ============================= */
 /* FOOTER */
