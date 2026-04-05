@@ -266,10 +266,10 @@ body {
 
 #tagline {
     background: linear-gradient(190deg,
-        #40d6a9,
-        #501997,
-        #4a4aff,
-        #ee6262);
+            #40d6a9,
+            #501997,
+            #4a4aff,
+            #ee6262);
 }
 
 .tagline {
@@ -361,22 +361,22 @@ body {
 
 .country-image img,
 .country-info h3,
-.country-info p{
-transition:opacity 0.5s ease, transform 0.5s ease;
+.country-info p {
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 /* hidden state */
 
-.fade-out{
-opacity:0;
-transform:translateY(20px);
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 /* visible state */
 
-.fade-in{
-opacity:1;
-transform:translateY(0);
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* =============================================================================================== */
@@ -522,10 +522,10 @@ transform:translateY(0);
     text-align: center;
     /* background: linear-gradient(180deg, #111132, #0c0c1d); */
     background: linear-gradient(190deg,
-        #da4619,
-        #b97f13,
-        #0d690d,
-        #95bd28);
+            #da4619,
+            #b97f13,
+            #0d690d,
+            #95bd28);
 }
 
 .services h2 {
@@ -709,6 +709,135 @@ transform:translateY(0);
 
 .rights {
     margin-top: 10px;
+}
+
+/* =============================================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background: #0c0c1d;
+    color: white;
+}
+
+/* =============================================================================================== */
+
+/* HERO */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url("https://images.unsplash.com/photo-1502920917128-1aa500764cbd");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(5, 5, 20, 0.85),
+            rgba(5, 5, 30, 0.9));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* =============================================================================================== */
+/* (All your existing CSS remains exactly the same — no changes needed above) */
+/* =============================================================================================== */
+
+/* FOOTER */
+
+.footer {
+    background: #070714;
+    padding: 50px 10%;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 150px;
+    border: none;
+    border-radius: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.rights {
+    margin-top: 10px;
+}
+
+/* =============================================================================================== */
+/* ===== NEW CHANGE FOR LOGO SIZE ===== */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 90px;
+    /* adjust size */
+    height: 90px;
+    /* make equal to width */
+    border-radius: 50%;
+    /* makes it round */
+    object-fit: cover;
+    /* keeps image nicely fitted */
+}
+
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #ccc;
+    /* optional hover effect */
 }
 
 /* =============================================================================================== */

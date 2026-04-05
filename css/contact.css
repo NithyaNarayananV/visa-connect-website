@@ -41,6 +41,10 @@ body {
   border-radius: 12px;
   text-align: center;
   transition: 0.3s;
+  /* ===== NEW CHANGE (FIX EMAIL OVERFLOW) ===== */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .contact-card:hover {
@@ -92,8 +96,8 @@ body {
   transition: 0.3s;
 }
 
-.input-group input:focus + label,
-.input-group textarea:focus + label {
+.input-group input:focus+label,
+.input-group textarea:focus+label {
   top: -10px;
   font-size: 12px;
   color: #9a4dff;
@@ -168,4 +172,40 @@ button {
 
 .rights {
   margin-top: 10px;
+}
+
+/* ===================================================== */
+/* LOGO FULL CSS (ROUND LOGO STYLE) */
+/* ===================================================== */
+
+/* Logo container alignment */
+.brand {
+  display: flex;
+  align-items: center;
+  /* vertical center */
+  gap: 10px;
+  /* space between logo and text */
+}
+
+/* Round logo styling */
+.logo-img {
+  width: 90px;
+  /* logo size */
+  height: 90px;
+  /* must be same as width */
+  border-radius: 50%;
+  /* makes logo circular */
+  object-fit: cover;
+  /* keeps image properly fitted */
+
+  /* Optional professional styling */
+  border: 2px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.logo-img:hover {
+  transform: scale(1.05);
 }
