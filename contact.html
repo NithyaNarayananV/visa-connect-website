@@ -102,38 +102,55 @@
 
 
 
-    <section class="contact-form-section">
+   <section class="contact-form-section">
 
-        <h2>Send Us a Message</h2>
+    <h2>Send Us a Message</h2>
 
-        <form class="contact-form">
+    <!-- 1. Added Salesforce Action URL and POST Method -->
+    <form class="sf-form" action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DGA000008YnWO" method="POST">
+      
+      <!-- Hidden Salesforce Fields -->
+      <input type=hidden name="orgid" value="00DGA000008YnWO">
+      <!-- NOTE: Replace "http://" below with the URL of your actual 'Thank You' page -->
+      <input type="hidden" name="retURL" value="https://www.blogger.com/profile/01399622882292495896">
+      
 
-            <div class="input-group">
-                <input type="text" required>
-                <label>Full Name</label>
-            </div>
+        <div class="input-group">
+            <!-- 3. Added id, name="name", and maxlength -->
+            <input type="text" id="name" maxlength="80" name="name" required>
+            <label for="name">Full Name</label>
+        </div>
 
-            <div class="input-group">
-                <input type="email" required>
-                <label>Email Address</label>
-            </div>
+        <div class="input-group">
+            <!-- Added id, name="email", and maxlength -->
+            <input type="email" id="email" maxlength="80" name="email" required>
+            <label for="email">Email Address</label>
+        </div>
 
-            <div class="input-group">
-                <input type="text" required>
-                <label>Phone Number</label>
-            </div>
+        <div class="input-group">
+            <!-- Added id, name="phone", and maxlength -->
+            <input type="text" id="phone" maxlength="40" name="phone" required>
+            <label for="phone">Phone Number</label>
+        </div>
 
-            <div class="input-group">
-                <textarea required></textarea>
-                <label>Your Message</label>
-            </div>
+        <!-- Added Subject field to ensure the Case has a title -->
+        <div class="input-group">
+            <input type="text" id="subject" maxlength="80" name="subject" required>
+            <label for="subject">Subject</label>
+        </div>
 
-            <button type="submit">Submit Inquiry</button>
+        <div class="input-group">
+            <!-- Added id and name="description" -->
+            <textarea id="description" name="description" required></textarea>
+            <label for="description">Your Message</label>
+        </div>
 
-        </form>
+        <!-- Added name="submit" -->
+        <button type="submit" name="submit">Submit Inquiry</button>
 
-    </section>
-
+    </form>
+    
+</section>
 
 
     <section class="map-section">
